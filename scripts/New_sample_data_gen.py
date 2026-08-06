@@ -47,16 +47,16 @@ except ImportError:
 # =====================================================================
 
 CONFIG = {
-    "start_date": "2026-06-07",
+    "start_date": "2026-08-01",
     "num_days": 4,
 
-    "orders_per_day_min": 3,
+    "orders_per_day_min": 1,
     "orders_per_day_max": 8,
     "customers_per_day_min": 5,
     "customers_per_day_max": 10,
 
-    "order_bad_row_chance": 0.00,
-    "customer_bad_record_chance": 0.25,
+    "order_bad_row_chance": 0.05,
+    "customer_bad_record_chance": 0.05,
 
     "schema_drift_after_day": None,
     "promotion_codes": ["BLACKFRI", "SAVE10", "WELCOME", "SUMMER25", ""],
@@ -73,7 +73,7 @@ CONFIG = {
 
         # ---- Programmatic templates ---------------------------------
         "template_injection": {
-            "enabled": False,
+            "enabled": True,
             "mode": "random",           # "fixed" | "random" | "per_day"
             "random_count_min": 1,
             "random_count_max": 2,
@@ -107,8 +107,8 @@ CONFIG = {
             # "all"            -> every dt= folder found for that type
             # "match"          -> only dates inside the generated range
             # ["2026-08-07"]   -> explicit list of ISO date strings
-            "orders_date_selection":    "match",
-            "customers_date_selection": "match",
+            "orders_date_selection":    "all",
+            "customers_date_selection": "all",
 
             # Rows to use from each day (all parquet files in the
             # dt= folder are concatenated first, then this limit applied).
