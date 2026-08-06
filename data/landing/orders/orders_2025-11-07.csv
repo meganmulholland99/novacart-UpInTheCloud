@@ -1,0 +1,6 @@
+order_id,customer_id,product_id,order_date,amount,currency,status,quantity
+O00000001,C001,P001,2025-11-07,49.99,USD,shipped,1
+O00000002,C002,P002,2025-11-07,129.50,USD,pending,2
+O00000003,C003,P001,2025-11-07,49.99,USD,delivered,1
+O00000004,C001,P003,2025-11-07,15.00,USD,cancelled,1
+O00000005,C004,P002,2025-11-07,129.50,USD,shipped,1

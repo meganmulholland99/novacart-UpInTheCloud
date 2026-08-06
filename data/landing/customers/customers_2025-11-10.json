@@ -1,0 +1,17 @@
+[
+  {
+    "customer_id": "C009",
+    "name": "Iris Khan",
+    "email": "iris@example.com",
+    "signup_date": "2025-11-10",
+    "address": {
+      "street": "88 Willow Dr",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30301"
+    },
+    "phones": [
+      "+1-555-0900"
+    ]
+  }
+]

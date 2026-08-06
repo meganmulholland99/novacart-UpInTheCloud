@@ -1,0 +1,33 @@
+[
+  {
+    "customer_id": "C002",
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "signup_date": "2024-05-22",
+    "address": {
+      "street": "200 Cherry St",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97201"
+    },
+    "phones": [
+      "+1-555-0200",
+      "+1-555-0201"
+    ]
+  },
+  {
+    "customer_id": "C005",
+    "name": "Eve Martinez",
+    "email": "EVE@example.com",
+    "signup_date": "2025-11-08",
+    "address": {
+      "street": "777 Cedar Way",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33101"
+    },
+    "phones": [
+      "+1-555-0500"
+    ]
+  }
+]

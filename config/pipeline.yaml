@@ -1,0 +1,55 @@
+# NovaCart Pipeline Configuration
+# Edit paths and thresholds here without touching code.
+
+pipeline:
+  name: novacart_etl
+  environment: dev
+
+paths:
+  landing: data/landing
+  bronze: data/bronze
+  silver: data/silver
+  gold: data/gold
+  quarantine: data/quarantine
+  state: state
+  logs: logs
+
+sources:
+  orders:
+    landing_dir: data/landing/orders
+    file_pattern: "orders_{date}.csv"
+    encoding_primary: utf-8
+    encoding_fallback: latin-1
+  customers:
+    landing_dir: data/landing/customers
+    file_pattern: "customers_{date}.json"
+  products:
+    db_path: data/landing/products.db
+    table: products
+    watermark_column: updated_at
+
+quality:
+  # Hard failures (stop the pipeline)
+  hard:
+    require_non_empty: true
+    primary_keys:
+      orders: order_id
+      customers: customer_id
+      products: product_id
+  # Soft warnings (log and continue)
+  soft:
+    row_count_drop_pct: 30        # warn if row count drops > 30% vs last successful run
+    email_invalid_pct: 5          # warn if > 5% of emails fail validation
+    allowed_statuses:
+      - pending
+      - shipped
+      - delivered
+      - cancelled
+
+retry:
+  max_attempts: 3
+  backoff_seconds: 2
+
+logging:
+  level: INFO
+  json: true

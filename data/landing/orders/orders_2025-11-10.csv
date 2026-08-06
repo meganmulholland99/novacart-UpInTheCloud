@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,amount,currency,status,quantity,promotion_code
+O00000017,C001,P001,2025-11-10,49.99,USD,shipped,1,BLACKFRI
+O00000018,C002,P004,2025-11-10,299.00,USD,pending,1,BLACKFRI
+O00000019,C006,P001,2025-11-10,49.99,USD,shipped,1,

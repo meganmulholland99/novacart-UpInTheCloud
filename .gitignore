@@ -1,0 +1,27 @@
+# Virtual envs
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Pipeline runtime artifacts (regenerate with `scripts/generate_sample_data.py`)
+data/bronze/
+data/silver/
+data/gold/
+data/quarantine/
+state/
+logs/
+*.parquet
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.key

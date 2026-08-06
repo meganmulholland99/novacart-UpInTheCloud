@@ -1,0 +1,32 @@
+[
+  {
+    "customer_id": "C006",
+    "name": "Frank Wright",
+    "email": "frank@example.com",
+    "signup_date": "2025-11-09",
+    "address": {
+      "street": "12 Elm Ct",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60601"
+    },
+    "phones": [
+      "+1-555-0600"
+    ]
+  },
+  {
+    "customer_id": "C007",
+    "name": "Grace Bad",
+    "email": "not-an-email",
+    "signup_date": "2025-11-09",
+    "address": {},
+    "phones": []
+  },
+  {
+    "customer_id": "C008",
+    "email": "henry@example.com",
+    "signup_date": "2025-11-09",
+    "address": {},
+    "phones": []
+  }
+]

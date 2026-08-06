@@ -1,0 +1,61 @@
+[
+  {
+    "customer_id": "C001",
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "signup_date": "2024-03-15",
+    "address": {
+      "street": "123 Maple St",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "78701"
+    },
+    "phones": [
+      "+1-555-0100"
+    ]
+  },
+  {
+    "customer_id": "C002",
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "signup_date": "2024-05-22",
+    "address": {
+      "street": "45 Oak Ave",
+      "city": "Denver",
+      "state": "CO",
+      "zip": "80202"
+    },
+    "phones": [
+      "+1-555-0200",
+      "+1-555-0201"
+    ]
+  },
+  {
+    "customer_id": "C003",
+    "name": "Carol Davis",
+    "email": "carol@example.com",
+    "signup_date": "2024-07-01",
+    "address": {
+      "street": "9 Pine Rd",
+      "city": "Seattle",
+      "state": "WA",
+      "zip": "98101"
+    },
+    "phones": [
+      "+1-555-0300"
+    ]
+  },
+  {
+    "customer_id": "C004",
+    "name": "David Lee",
+    "email": "david@example.com",
+    "signup_date": "2024-09-10",
+    "address": {
+      "street": "55 Birch Ln",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "02108"
+    },
+    "phones": []
+  }
+]
